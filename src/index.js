@@ -6,10 +6,15 @@ import Profile from './components/Profile'
 import About from './components/About'
 import Contact from './components/Contact'
 import Home from './components/Home'
-import EditProfile from './components/EditProfile'
+import Services from './components/Services'
+
+import axios from 'axios'
+
+
+// import EditProfile from './components/EditProfile'
 import Footer from './components/Footer'
 import NotFound from './components/NotFound'
-import  './style.css'
+import './app.scss'
 
 
 const App = () => {
@@ -21,8 +26,10 @@ const App = () => {
               <Route path="/" component={Home} exact={true} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
-              <Route path="/Profile" component={Profile} exact={true} />
-              <Route path="/profile/:id" component={EditProfile} />
+              <Route path="/profile" component={Profile} exact={true} />
+              <Route path="/services" component={Services} exact={true} />
+
+              {/* <Route path="/profile/:id" component={EditProfile} /> */}
               <Route path="/notfound" component={NotFound} />
           </Switch>
       </BrowserRouter>
