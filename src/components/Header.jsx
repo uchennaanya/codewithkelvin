@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      <h2>CodeWithKelvin</h2>
+      <h2>CodesByKelvin</h2>
       <nav className="navigation-menu">
         <ul >
           <li>
