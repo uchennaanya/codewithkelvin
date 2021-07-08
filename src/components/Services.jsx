@@ -3,7 +3,7 @@ import axios from 'axios'
 import List from './List';
 import withListLoading from './WithListLoading';
 
-const Services = ({repos}) => {
+const Services = () => {
 
     const ListLoading = withListLoading(List);
 
@@ -29,7 +29,7 @@ const Services = ({repos}) => {
             <div className='container'>
                 <h1>My Repositories</h1>
             </div>
-            <div className='repo-container'>
+            <div className='repo-container' >
                 <ListLoading isLoading={appState.loading} repos={appState.repos} />
             </div>
         </main>

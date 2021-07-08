@@ -8,7 +8,7 @@ const List = ({repos}) => {
       <h2 className='list-head'>Available Public Repositories</h2>
       {repos.map((repo) => {
         return (
-          <div key={repo.id} style={{ border: '2px solid green', margin: '0.4rem', display: 'inline', height: '100px', width: 'auto' }}>
+          <div key={repo.id}  className="repos" >
             <span className='repo-text'>{repo.name} </span>
             <span className='repo-description'>{repo.description}</span>
           </div>

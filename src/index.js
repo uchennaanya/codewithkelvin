@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Redirect, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/Header'
 import Profile from './components/Profile'
 import About from './components/About'
@@ -26,8 +26,8 @@ const App = () => {
               <Route path="/" component={Home} exact={true} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
-              <Route path="/profile" component={Profile} exact={true} />
-              <Route path="/services" component={Services} exact={true} />
+              <Route path="/profile" component={Profile} />
+              <Route path="/services" component={Services} />
 
               {/* <Route path="/profile/:id" component={EditProfile} /> */}
               <Route path="/notfound" component={NotFound} />
