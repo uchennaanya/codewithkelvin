@@ -1,4 +1,7 @@
-$bgcolor:rgb(88, 6, 6);
+$bgcolor: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+
 $txtcolor:rgb(255, 255, 255);
 
 * {
@@ -15,6 +18,17 @@ $txtcolor:rgb(255, 255, 255);
     padding: 1em 3em;
   }
 
+  .layer {
+    display: flex;
+    color: #fff;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    background-color: rgba(0,0, 0, 0.5)
+  }
+
   .active {
     font-weight: bold;
     color: red;
@@ -27,7 +41,6 @@ $txtcolor:rgb(255, 255, 255);
     padding: 1em 3em;
     color: #000;
     box-shadow: 0 1px 9px 0 #ccc;
-
     .navigation-menu {
       list-style-type: none;
       margin-bottom: 1rem;
@@ -38,14 +51,14 @@ $txtcolor:rgb(255, 255, 255);
     .navigation-menu li a {
       padding: 0.5rem;
       font-weight: bolder;
-      color: #000;
+      // color: #000;
       text-decoration: none;
     }
   }
 
   .contact {
     input, textarea {
-      width: 90%;
+      width: 100%;
       margin: 20px 0;
       padding: 1em;
       border: none;
@@ -53,9 +66,10 @@ $txtcolor:rgb(255, 255, 255);
     }
 
     form {
-      width: 50%;
+      width: 100%;
       box-shadow: 1px 9px 9px 0 #ccc;
-      padding: 1rem;
+      padding: 0 1rem 1rem 1rem;
+      height: 50vh;
     }
 
     input:focus, textarea:focus, select:focus{
@@ -75,15 +89,15 @@ $txtcolor:rgb(255, 255, 255);
  }
   .contactbg {
     background: url('./imgs/contactbg.jpg') center no-repeat;
-    width: 50%;
-    height: 55vh;
+    width: 55%;
+    height: 50vh;
     background-size: cover;
     box-shadow: 1px 9px 9px 0 #ccc;
   }
 
-    p{
-      margin: 10px 0;
-    }
+  p{
+    margin: 0 0 10px 0;
+  }
     button {
       background-color: green;
       padding: 0.5em 2em;
@@ -110,11 +124,14 @@ $txtcolor:rgb(255, 255, 255);
   }
 
   .home {
-      padding: 5rem 2rem 0 2rem;
-      height: 100vh;
-      background-color: $bgcolor;
+    display: flex;
+      justify-content: center;
+      padding: 0 2rem 0 2rem;
+      height: 80vh;
+      width: 100%;
+      background: $bgcolor;
       color: $txtcolor;
-
+      align-items: center;
       h1{
         font-size: 4rem;
         font-weight: bolder;
