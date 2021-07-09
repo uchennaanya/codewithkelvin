@@ -1,10 +1,3 @@
-/*
-Home
-About
-Contact
-Profile
-*/
-
 $bgcolor:rgb(88, 6, 6);
 $txtcolor:rgb(255, 255, 255);
 
@@ -74,13 +67,12 @@ $txtcolor:rgb(255, 255, 255);
     padding-bottom: 100px;
   }
   .banner {
-    background-color: #f1f1f1;
     height: 50vh;
     width: 100%;
     background: url('./imgs/contact.jpg') center no-repeat;
     background-size: cover;
+    // object-fit: cover;
  }
-
   .contactbg {
     background: url('./imgs/contactbg.jpg') center no-repeat;
     width: 50%;
@@ -88,10 +80,6 @@ $txtcolor:rgb(255, 255, 255);
     background-size: cover;
     box-shadow: 1px 9px 9px 0 #ccc;
   }
-
-    h2 {
-      margin-bottom: 10vh;
-    }
 
     p{
       margin: 10px 0;
@@ -110,10 +98,9 @@ $txtcolor:rgb(255, 255, 255);
   .about{
     .banner {
       background-color: #f1f1f1;
-      height: 50vh;
-      width: 100%;
       background: url('./imgs/3s.jpg') center no-repeat;
       background-size: cover;
+      height: 50vh;
    }
    p {
      padding: 15px 0;
@@ -136,7 +123,6 @@ $txtcolor:rgb(255, 255, 255);
 
   .list {
     .repos {
-      // background: url(./imgs/contact.jpg) 0 0;
       background-size: cover;
       margin: 0.4rem;
       display: inline-block;
