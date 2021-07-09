@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Form from './Form'
 
 const About = () => {
     return (
@@ -17,6 +18,9 @@ const About = () => {
                     creating an experience that is not possible in ordinary physical reality.
                     Augmented reality systems may also be considered a form of VR that layers virtual information over a live camera feed into a headset or through a smartphone or tablet device giving the user the ability to view three-dimensional images.
                 </p>
+                <div className="contact">
+                    <Form />
+                </div>
             </main>
         </div>
     )

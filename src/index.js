@@ -28,9 +28,9 @@ const App = () => {
               <Route path="/contact" component={Contact} />
               <Route path="/profile" component={Profile} />
               <Route path="/services" component={Services} />
+              <Route path="/notfound" component={NotFound} />
 
               {/* <Route path="/profile/:id" component={EditProfile} /> */}
-              <Route path="/notfound" component={NotFound} />
           </Switch>
       </BrowserRouter>
       <Footer />

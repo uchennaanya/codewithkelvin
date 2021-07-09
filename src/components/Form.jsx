@@ -4,6 +4,7 @@ const Form = () => {
     return (
         <div>
             <form action="">
+                <h2>We will love to here from</h2>
               <p>You can reach us by filling the form bellow and we will take it up from there</p>
               <div>
                 <label htmlFor="email">Email</label>

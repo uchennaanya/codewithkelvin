@@ -8,6 +8,7 @@ const Footer = () => {
         <div className='footer'>
             <p>&copy; All right reserved {year}</p>
         </div>
+
     )
 }
 
